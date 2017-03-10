@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebsiteBuilder</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class='suk-raleway'>
+    <nav class="navbar padded-navbar navbar-light navbar-toggleable-sm bg-faded justify-content-center">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="/" class="navbar-brand d-flex w-50 mr-auto">LESSLIE <strong>CARO</strong></a>
+        <div class="navbar-collapse collapse" id="collapsingNavbar3">
+            <ul class="navbar-nav mx-auto w-100 justify-content-center">
+                <li class="nav-item active d-flex align-items-center">
+                    <a class="nav-link small-link" href="#">BLOG</a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link small-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link small-link" href="#">CONTACT</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-facebook"></i></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-twitter"></i></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-pinterest"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid readable">
+      <div class="container">
+        <h1 class="display-3">Say anything you want here!</h1>
+        <p class="lead">This is your website :)</p>
+      </div>
+    </div>
+    <div class='container'>
+      <%= yield %>
+    </div>
+  </body>
+</html>

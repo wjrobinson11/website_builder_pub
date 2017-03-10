@@ -1,0 +1,8 @@
+.thumbnail img {
+  width: 100%;
+  height: 320px;
+}
+
+.col-lg-4.thumb {
+  padding: 50px;
+}
